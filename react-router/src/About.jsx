@@ -1,18 +1,8 @@
-import Navbar from "./Navbar";
-import { User, Info } from "lucide-react";
-
 function About() {
   return (
-    <div>
-      <Navbar active="about" />
-
-      <h1>
-        <Info size={30} /> About Us
-      </h1>
-
-      <p>
-         This is About page
-      </p>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1 style={{ color: "green" }}>About Page</h1>
+      <p>This is a simple React Router application.</p>
     </div>
   );
 }

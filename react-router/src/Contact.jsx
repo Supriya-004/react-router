@@ -1,18 +1,37 @@
-import Navbar from "./Navbar";
-import { Mail, Phone } from "lucide-react";
-
 function Contact() {
   return (
-    <div>
-      <Navbar active="contact" />
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1 style={{ color: "red" }}>Contact Page</h1>
 
-      <h1>
-        <Mail size={30} /> Contact Us
-      </h1>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter Name"
+          style={{ padding: "10px", margin: "10px" }}
+        /><br />
 
-      <p>
-        Call us anytime!
-      </p>
+        <input
+          type="email"
+          placeholder="Enter Email"
+          style={{ padding: "10px", margin: "10px" }}
+        /><br />
+
+        <textarea
+          placeholder="Enter Message"
+          style={{ padding: "10px", margin: "10px" }}
+        ></textarea><br />
+
+        <button
+          style={{
+            padding: "10px 20px",
+            backgroundColor: "blue",
+            color: "white",
+            border: "none"
+          }}
+        >
+          Submit
+        </button>
+      </form>
     </div>
   );
 }

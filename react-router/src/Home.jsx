@@ -1,18 +1,10 @@
-import Navbar from "./Navbar";
-import { Home } from "lucide-react";
-
-function HomePage() {
+function Home() {
   return (
-    <div>
-      <Navbar active="home" />
-      
-      <h1>
-        <Home size={30} /> Home Page
-      </h1>
-
-      <p>Welcome to Home Page</p>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1 style={{ color: "blue" }}>Home Page</h1>
+      <p>Welcome to our website 🚀</p>
     </div>
   );
 }
 
-export default HomePage;
+export default Home;

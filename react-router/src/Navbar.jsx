@@ -1,36 +1,26 @@
 import { Link } from "react-router-dom";
-import { Home, User, Mail } from "lucide-react";
-import "./Navbar.css";
 
-function Navbar({ active }) {
+function Navbar() {
+  const navStyle = {
+    backgroundColor: "#222",
+    padding: "15px",
+    textAlign: "center"
+  };
+
+  const linkStyle = {
+    color: "white",
+    margin: "15px",
+    textDecoration: "none",
+    fontSize: "18px",
+    fontWeight: "bold"
+  };
+
   return (
-    <div className="navbar">
-
-      <Link
-        to="/"
-        className="nav-menu"
-        style={{ fontWeight: active === "home" ? "bold" : "normal" }}
-      >
-        <Home size={18} /> Home
-      </Link>
-
-      <Link
-        to="/about"
-        className="nav-menu"
-        style={{ fontWeight: active === "about" ? "bold" : "normal" }}
-      >
-        <User size={18} /> About Us
-      </Link>
-
-      <Link
-        to="/contact"
-        className="nav-menu"
-        style={{ fontWeight: active === "contact" ? "bold" : "normal" }}
-      >
-        <Mail size={18} /> Contact Us
-      </Link>
-
-    </div>
+    <nav style={navStyle}>
+      <Link to="/" style={linkStyle}>Home</Link>
+      <Link to="/about" style={linkStyle}>About</Link>
+      <Link to="/contact" style={linkStyle}>Contact</Link>
+    </nav>
   );
 }
 
